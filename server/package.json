@@ -1,0 +1,14 @@
+{
+  "name": "shop-secure-server",
+  "version": "1.0.0",
+  "scripts": {
+    "vuln":   "node server-vulnerable.js",
+    "secure": "node server-secure.js",
+    "attack": "node attack.js"
+  },
+  "dependencies": {
+    "cors":       "^2.8.5",
+    "express":    "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
