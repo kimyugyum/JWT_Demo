@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Navbar, StatusBadge, Card, TokenDecoder } from '../components/UI';
 import { MY_ORDERS } from '../utils/data';
-import { createToken, b64url } from '../utils/jwt';
+import { createToken } from '../utils/jwt';
 
 // 공격 단계 (터미널처럼 순서대로 출력)
 const STEPS = [
@@ -139,7 +139,7 @@ export default function DashboardPage({ session, onLogout, onAttackSuccess }) {
 
             {/* 터미널 */}
             <div style={{ background:'#050508', border:'1px solid var(--border)', borderRadius:10, padding:'16px 20px', minHeight:280, fontFamily:'var(--font-mono)', fontSize:12, lineHeight:2 }}>
-              <div style={{ color:'var(--muted)', marginBottom:8, fontSize:11 }}>// 브라우저 콘솔 — 공격자 시점</div>
+              <div style={{ color:'var(--muted)', marginBottom:8, fontSize:11 }}>{'// 브라우저 콘솔 — 공격자 시점'}</div>
               {STEPS.slice(0, stepIdx + 1).map((s, i) => (
                 <div key={i}>
                   {/* 커맨드 라인 */}

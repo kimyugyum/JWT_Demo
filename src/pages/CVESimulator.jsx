@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 
 // ── 디자인 토큰 ──────────────────────────────────────────────
 const G = {
@@ -334,7 +334,7 @@ export default function CVESimulator() {
             fontFamily:"'JetBrains Mono',monospace",
           }}>
             <div style={{ color:G.muted, fontSize:11, marginBottom:12 }}>
-              // pac4j JwtAuthenticator 처리 흐름
+              {'// pac4j JwtAuthenticator 처리 흐름'}
             </div>
 
             {stepIdx === -1 && !running && !done && (
